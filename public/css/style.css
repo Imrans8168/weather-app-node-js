@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+html{
+    
+
+}
+.main_menu{
+   
+}
+.navbar{
+    padding: 1rem 0;
+}
+.fa-snowflake{
+    transform:all linear;
+    animation:rot 2s linear infinite;
+    color: blue;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+/* main header */
+
+.main_header_left{
+height: 25rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+.main_header_right{
+    height: 25rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+button{
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 8px 6px -6px #000;
+}
+span{
+    color: blue;
+}
+
+/* weatherinfo */
+
+.temp_Information{
+    width: 400px;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+   
+}
+.top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: #4b67e0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;   
+}
+.top_layer p{
+    padding: 2rem;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.3rem;
+
+}
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+.main_layer #city_name{
+    color: #fff;
+    font-weight: 300;
+    font-size: 2rem;    
+}
+.main_layer .middle_layer{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.main_layer .middle_layer p{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.data_hide{
+    /* visibility: hidden; */
+    transition: all 0.3s linear;
+}
+.temp_form{
+    width: 60%;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem auto;
+}
+.temp_form input[type="text"]{
+   
+   padding: 5px;
+    background: #1e202b;
+    color: white;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+
+}
+
+/* error images styel */
+/* .errimg img{
+    width: 60rem;
+    height: 30rem;
+} */
+/* footer style */
+
+
+footer{
+    width: 100%;
+    background-color: lightgreen; 
+    margin-top: auto;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    color: black;
+    line-height: 5rem;
+    font-size: 1.4rem;
+
+}
+.main_header_right figure img{
+    
+}
+
+@media (max-width: 768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .main_header_right{
+        height: auto;
+        margin-top: 3rem 0;
+    }
+}
